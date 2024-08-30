@@ -57,7 +57,7 @@ const Resume = () => {
                     </p>
                 )}
 
-                <a href={`/pdf/${profile?.username}.pdf`} download className="uppercase inline-block p-2 rounded-md text-xs font-semibold border border-gray-200 hover:text-white hover:bg-gray-400 transition duration-300">
+                <a href={`./pdf/${profile?.username}.pdf`} download className="uppercase inline-block p-2 rounded-md text-xs font-semibold border border-gray-200 hover:text-white hover:bg-gray-400 transition duration-300">
                     Download Resume
                 </a>
             </div>

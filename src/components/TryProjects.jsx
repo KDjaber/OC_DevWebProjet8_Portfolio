@@ -26,7 +26,7 @@ const TryProjects = ({data}) => {
                         <img
                             className="h-full object-center object-cover"
                             style={{clipPath: "url(#squircle)"}}
-                            src={`/images/${data.image}`}
+                            src={`./images/${data.image}`}
                             alt=""
                         />
                     ) : (
