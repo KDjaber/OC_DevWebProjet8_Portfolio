@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
     const {profile} = config;
-    const [data, loading] = useFetchData(`https://api.github.com/search/repositories?q=user:${profile.username}+fork:true&sort=stars&per_page=6&type=Repositories`);
+    const [data, loading] = useFetchData(`https://api.github.com/search/repositories?q=user:${profile.username}+fork:true&sort=updated&per_page=6&type=Repositories`);
 
     return (
         <div className="min-h-screen">
@@ -67,9 +67,11 @@ const App = () => {
                                 </>
                             ) : (
                                 <>
-                                    {data?.items.map((item, index) => (
+                                    {
+                                    data?.items.map((item, index) => (
                                         <Project key={index} data={item}/>
-                                    ))}
+                                    ))
+                                }
                                 </>
                             )}
                         </div>
