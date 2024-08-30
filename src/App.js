@@ -19,8 +19,6 @@ const App = () => {
         <div className="min-h-screen">
             <div className="p-4 md:p-10 flex flex-col lg:flex-row gap-6">
                 <div className="w-full lg:w-2/6 space-y-6">
-                    <ChangeTheme/>
-
                     <Resume/>
 
                     <Contact/>
@@ -28,20 +26,33 @@ const App = () => {
                     <TechStack/>
 
                     <Experience
+                        title={"Education"}
+                        data={profile.education}
+                    />
+
+                    <Experience
                         title={"Experience"}
                         data={profile.experience}
                     />
 
-                    <Experience
-                        title={"Education"}
-                        data={profile.eduction}
-                    />
+                    <ChangeTheme/>
                 </div>
 
                 <div className="w-full lg:w-4/6 space-y-6">
+                
+                <ProjectsContainer>
+                        <CardTitle>✨ Projets à la Une</CardTitle>
+
+                        <div className="space-y-6">
+                            {profile.tryProjects.map((item, index) => (
+                                <TryProjects key={index} data={item}/>
+                            ))}
+                        </div>
+                    </ProjectsContainer>
+
                     <ProjectsContainer>
                         <div className="flex items-center justify-between">
-                            <CardTitle>My Projects</CardTitle>
+                            <CardTitle>📚 Tous les Projets</CardTitle>
                             <a href={ profile?.username ? `https://github.com/${profile?.username}?tab=repositories` : "#repositories" } target="_blank" rel="noreferrer" className="text-sm text-gray-400">
                                 See all
                             </a>
@@ -64,15 +75,6 @@ const App = () => {
                         </div>
                     </ProjectsContainer>
 
-                    <ProjectsContainer>
-                        <CardTitle>A recent project that can be tested</CardTitle>
-
-                        <div className="space-y-6">
-                            {profile.tryProjects.map((item, index) => (
-                                <TryProjects key={index} data={item}/>
-                            ))}
-                        </div>
-                    </ProjectsContainer>
                 </div>
             </div>
 

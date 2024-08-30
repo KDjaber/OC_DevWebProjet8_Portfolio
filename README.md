@@ -136,7 +136,7 @@ Everything happens in the `config.js` file. Modify it as you like to get the res
                 institution: ""
             },
         ],
-        eduction: [
+        education: [
             {
                 period: "",
                 position: "",
@@ -288,7 +288,7 @@ These data are automatically retrieved via GitHub
 {
     profile: {
         // ...
-        eduction: [
+        education: [
             {
                 period: "",
                 position: "",

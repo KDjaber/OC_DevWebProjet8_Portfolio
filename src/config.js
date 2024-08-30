@@ -1,174 +1,115 @@
 import {MapPinIcon} from "@heroicons/react/24/solid";
-import {BuildingOfficeIcon, EnvelopeIcon, GlobeAltIcon} from "@heroicons/react/20/solid";
-import {DevIcon, GithubIcon, LinkedInIcon, MediumIcon, TwitterIcon} from "./components/utils";
-import moment from "moment";
+import {EnvelopeIcon} from "@heroicons/react/20/solid";
+import {GithubIcon, LinkedInIcon} from "./components/utils";
 
 const config = {
     profile: {
-        username: "onesine",
+        username: "KDjaber",
         contact: [
             {
                 link: null,
                 data: {
                     text: "Based in",
-                    value: "Bénin"
+                    value: "Lyon"
                 },
                 icon: (<MapPinIcon className="h-4 w-4"/>)
             },
             {
-                link: "https://www.dmdsatis.com/",
-                data: {
-                    text: "Company",
-                    value: "Paydunya"
-                },
-                icon: (<BuildingOfficeIcon className="h-4 w-4"/>)
-            },
-            {
-                link: "https://github.com/onesine",
+                link: "https://github.com/KDjaber",
                 data: {
                     text: "GitHub",
-                    value: "onesine"
+                    value: "KDjaber"
                 },
                 icon: (<GithubIcon className="h-4 w-4"/>)
             },
             {
-                link: "https://twitter.com/LewheO",
-                data: {
-                    text: "Twitter",
-                    value: "g2ek"
-                },
-                icon: (<TwitterIcon className="h-4 w-4"/>)
-            },
-            {
-                link: "https://www.linkedin.com/in/onesine-lewhe-63109a171/",
+                link: "https://www.linkedin.com/in/katia-djaber-b2a750140/",
                 data: {
                     text: "LinkedIn",
-                    value: "Onesine Lewhe"
+                    value: "Katia Djaber"
                 },
                 icon: (<LinkedInIcon className="h-4 w-4"/>)
             },
             {
-                link: "https://medium.com/@philemonlewhe",
-                data: {
-                    text: "Medium",
-                    value: "onesine"
-                },
-                icon: (<MediumIcon className="h-4 w-4"/>)
-            },
-            {
-                link: "https://dev.to/onesine",
-                data: {
-                    text: "Dev",
-                    value: "onesine"
-                },
-                icon: (<DevIcon className="h-4 w-4"/>)
-            },
-            {
-                link: null,
-                data: {
-                    text: "Website",
-                    value: "https://onesine.github.io"
-                },
-                icon: (<GlobeAltIcon className="h-4 w-4"/>)
-            },
-            {
-                link: "mailto:lewheonesine@gmail.com",
+                link: "mailto:katia.djaber@gmail.com",
                 data: {
                     text: "Email",
-                    value: "lewheonesine@gmail.com"
+                    value: "katia.djaber@gmail.com"
                 },
                 icon: (<EnvelopeIcon className="h-4 w-4"/>)
             },
         ],
-        techStack: ["PHP", "Laravel", "JavaScript", "TypeScript", "React.js", "MySQL", "Git", "CSS", "Tailwindcss"],
-        experience: [
+        techStack: ["JavaScript", "React.js", "HTML", "CSS", "SaSS", "NodeJS", "Express", "MongoDB", "Git"],
+        education: [
             {
-                period: "2019 - Today",
-                position: "Full-stack Developer",
-                institution: "DMD SARL"
+                period: "2024",
+                position: "Formation Développeur Web",
+                institution: "Open Classrooms"
             },
             {
-                period: "July 2019 - September 2019",
-                position: "Full-stack Developer | Internship",
-                institution: "DMD SARL"
+                period: "2017-2021",
+                position: "Licence - Responsable Marketing & Communication",
+                institution: "ESMOD"
+            },
+            {
+                period: "2014-2016",
+                position: "BP de Librairie",
+                institution: "Institut National de Formation à la Librairie"
             },
         ],
-        eduction: [
+        experience: [
             {
-                period: "2015 - 2019",
-                position: "Licence 3",
-                institution: "ESGIS"
+                period: "2021 - 2022",
+                position: "Chargée de projet",
+                institution: "Qualimetrie"
             },
             {
-                period: "2016",
-                position: "12th Grade",
-                institution: "CSS / CED"
+                period: "2020",
+                position: "Gestion des opérations marketing",
+                institution: "By Bamboù"
+            },
+            {
+                period: "2019",
+                position: "Assistante Rédactrice",
+                institution: "Drawer"
+            },
+            {
+                period: "2018",
+                position: "Conseillère de vente",
+                institution: "Tara Jarmon"
+            },
+            {
+                period: "2017",
+                position: "Volontaire en Service Civique",
+                institution: "Association ZUPdeCO"
+            },
+            {
+                period: "2014-2016",
+                position: "Libraire",
+                institution: "Librairie Internationale V.O."
+            },
+            {
+                period: "2014",
+                position: "Auxiliaire Vacances",
+                institution: "Crédit Agricole"
             },
         ],
         tryProjects: [
             {
-                image: "cryptocowrie-app.png",
-                link: "https://app.cryptocowries.io/login",
-                title: "CryptoCowries app",
-                description: "This project is primarily an app for buying, depositing and withdrawing crypto-currencies.",
-                date: "Still in development",
-                techStack: ["HTML", "CSS", "Typescript", "Tailwind", "React"]
+                image: "Grimoire.png",
+                link: "https://github.com/KDjaber/OC_DevWebProjet6_Grimoire",
+                title: "Mon Vieux Grimoire",
+                description: "Ce projet a été réalisé dans le cadre de la formation Développeur Web d'Open Classrooms. Le but était de réaliser le back-end d'un site de notation de livres. Les problématiques principales étaient de créer un serveur et d ele connecter à une base de données. Il fallait également développer un modèle de données et en implémenter les opérations CRUD. J'ai dû et pu apprendre à créer un serveur mais aussi à gérer à une base de données. J'ai appris à comprendre et mettre en place le développement back-end avec Node.js, Express et MongoDB : des compétences essentielles pour la création d'application web modernes et performantes.",
+                date: "Août 2024",
+                techStack: [ "Javascript", "Node.js", "MongoDB" ]
             },
             {
-                image: "atompay-app.png",
-                link: "https://test-paydunya-atompay.vercel.app/",
-                title: "Atompay app",
-                description: "It's an application for transferring money as part of a challenge. All data used in this application is false.",
-                date: moment(new Date("2023-02-21"), "YYYYMMDD").fromNow(),
-                techStack: ["HTML", "JavaScript", "React", "Tailwind"]
-            },
-            {
-                image: "inventor-app.png",
-                link: "http://45.134.226.100/",
-                title: "Inventor app",
-                description: "This project is a property management application for businesses.",
-                date: moment(new Date("2022-12-13"), "YYYYMMDD").fromNow(),
-                techStack: ["HTML", "JavaScript", "React", "Bootstrap 4"]
-            },
-            {
-                image: "react-tailwindcss-datepicker.png",
-                link: "https://react-tailwindcss-datepicker.vercel.app/",
-                title: "React Tailwindcss Datepicker",
-                description: "Modern date range picker component for React using Tailwind 3 and dayjs. Alternative to Litepie Datepicker.",
-                date: moment(new Date("2022-11-18"), "YYYYMMDD").fromNow(),
-                techStack: ["JavaScript", "TypeScript", "React", "Next", "Tailwindcss"]
-            },
-            {
-                image: "git-profile.png",
-                link: "https://git-profile-red.vercel.app/",
-                title: "Git Profile",
-                description: "This project presents some data from my GitHub and some project you can try.",
-                date: moment(new Date("2022-11-03"), "YYYYMMDD").fromNow(),
-                techStack: ["JavaScript", "React", "HTML", "Tailwindcss"]
-            },
-            {
-                image: "react-headless-accordion.png",
-                link: "https://react-nested-accordion.vercel.app/",
-                title: "Example usage react-headless-accordion",
-                description: "This project presents some use cases of my react-headless-accordion package.",
-                date: moment(new Date("2022-10-17"), "YYYYMMDD").fromNow(),
-                techStack: ["JavaScript", "React", "HTML", "Tailwindcss"]
-            },
-            {
-                image: "react-tailwindcss-select.png",
-                link: "https://demo-react-tailwindcss-select.vercel.app/",
-                title: "Demo of react-tailwindcss-select",
-                description: "This project allows you to test the different options available in my react-tailwindcss-select package.",
-                date: moment(new Date("2022-07-13"), "YYYYMMDD").fromNow(),
-                techStack: ["JavaScript", "React", "HTML", "Tailwindcss"]
-            },
-            {
-                image: "satis-backoffice.png",
-                link: "https://backoffice.satis-universe.com/",
-                title: "Satis backoffice",
-                description: "This project is a client survey application for microfinance institutions..",
-                date: moment(new Date("2022-04-13"), "YYYYMMDD").fromNow(),
-                techStack: ["HTML", "JavaScript", "React", "PHP", "Laravel", "Tailwindcss"]
+                image: "Kasa.png",
+                link: "https://github.com/KDjaber/OC_DevWebProjet5_Kasa",
+                title: "Kasa",
+                description: "Ce projet a été réalisé dans le cadre de la formation Développeur Web d'Open Classrooms. Le but était de réaliser une application web de location immobilière avec React. Les problématiques principales étaient d'implémenter le front-end d'une application en utilisant React et RTeact Router pour créer une expérience utilisateur moderne et réactive. J'ai appris à utiliser Create React App et Node.js, des compétences importantes dans le développement moderne. J'ai également appris à utiliser SaSS. La difficulté principale à été de réaliser un code mettant l'accent sur l'accessibilité ce que j'ai pu réaliser grâce aux différents cours de la plateforme et des des recherches.",
+                date: "Juin 2024",
+                techStack: [ "Javascript", "Node.js", "React", "HTML", "SCSS" ]
             },
         ]
     }
